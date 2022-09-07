@@ -42,7 +42,7 @@ export const HomeScreen = () => {
     <Grid container spacing={4}>
       {blogs?.map((blog) => {
         const value = blog?.difficulty;
-        const url = `/${blog?._id}`;
+        const url = `https://diy-frontend.vercel.app/blog/${blog?._id}`;
         return (
           <Grid item xs={10} md={3}>
             <Card
